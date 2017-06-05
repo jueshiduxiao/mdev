@@ -1,0 +1,42 @@
+#*
+  this page layout as follow diagram:
+  ----------------------------------------
+  |              hdModules               |
+  ----------------------------------------
+  |              bdModules               |
+  ----------------------------------------
+  |              ftModules               |
+  ----------------------------------------
+  ----------------------------------------
+  |            outsideModules            |
+  ----------------------------------------
+*#
+
+## 配置css, js
+#set($resource = {
+    "css": [
+        "./layout1"
+    ],
+    "js": []
+})
+
+<div id="doc">
+    <div id="hd">
+        <!-- head modules -->
+        #parseModules($hdModules)
+        <!-- head modules end -->
+    </div>
+    <div id="bd">
+        <!-- body modules -->
+        #parseModules($bdModules)
+        <!-- body modules end -->
+    </div>
+    <div id="ft">
+        <!-- footer modules -->
+        #parseModules($ftModules)
+        <!-- footer modules end -->
+    </div>
+</div>
+<!-- outside modules -->
+#parseModules($outsideModules)
+<!-- outside modules end -->

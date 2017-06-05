@@ -1,0 +1,20 @@
+#doc {}
+#hd, #bd  {
+    width: 990px;
+    margin: 0 auto;
+    text-align: left;
+}
+#yao-main {
+    float: left;
+    width: 100%;
+    margin-left: -277px;
+}
+#yao-main .yao-b {
+    float: none;
+    width: auto;
+    margin-left: 277px;
+}
+.yao-b {
+    float: right;
+    width: 277px;
+}

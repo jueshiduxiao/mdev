@@ -1,0 +1,11 @@
+.module-demo4-2 {
+    width: 500px;
+}
+.module-demo4-2 .hd {
+    background-color: #F1F1F1;
+    line-height: 30px;
+    cursor: pointer;
+}
+.module-demo4-2 .bd {
+    background-color: #F0FAFA;
+}

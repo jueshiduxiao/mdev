@@ -1,0 +1,30 @@
+{
+  "name": "mdev",
+  "version": "0.2.6",
+  "description": "mdev is a compiler for module development.",
+  "main": "./app.js",
+  "dependencies": {
+    "nodejs-console": "0.0.2",
+    "seajs-builder": "1.2.5",
+    "uglify-js": "2.4.8",
+    "velocityjs": "0.3.16",
+    "clean-css": "2.0.0",
+    "optimist": "0.2.5",
+    "nodejs-server": "0.0.5",
+    "nodejs-tools": "0.0.3"
+  },
+  "devDependencies": {},
+  "bin": {
+    "mdev": "./bin/mdev"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "keywords": [
+    "mdev",
+    "compiler",
+    "fis"
+  ],
+  "author": "lx",
+  "license": "BSD"
+}

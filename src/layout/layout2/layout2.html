@@ -1,0 +1,59 @@
+#*
+  this page layout as follow diagram:
+  ----------------------------------------
+  |              topModules              |
+  ----------------------------------------
+  ----------------------------------------
+  |              hdModules               |
+  ----------------------------------------
+  |     leftModules  |   rightModules    |
+  ----------------------------------------
+  |              ftModules               |
+  ----------------------------------------
+  ----------------------------------------
+  |          outOfPageModules            |
+  ----------------------------------------
+*#
+
+## 配置css, js
+#set($resource = {
+    "css": [
+        "./layout2"
+    ],
+    "js": []
+})
+
+<div id="doc">
+    <div id="globalHead">
+        <!-- global head modules -->
+        #parseModules($topModules)
+        <!-- global head modules end -->
+    </div>
+    <div id="hd">
+        <!-- head modules -->
+        #parseModules($hdModules)
+        <!-- head modules end -->
+    </div>
+    <div id="bd" class="clearfix">
+        <div id="yao-main">
+            <div class="yao-b">
+                <!-- left modules -->
+                #parseModules($leftModules)
+                <!-- left modules end -->
+            </div>
+        </div>
+        <div class="yao-b">
+            <!-- right modules -->
+            #parseModules($rightModules)
+            <!-- right modules end -->
+        </div>
+    </div>
+    <div id="ft">
+        <!-- foot modules -->
+        #parseModules($ftModules)
+        <!-- foot modules end -->
+    </div>
+</div>
+<!-- out of page modules -->
+#parseModules($outOfPageModules)
+<!-- out of page modules end -->
