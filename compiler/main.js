@@ -43,9 +43,9 @@ module.exports = (function (fs, path, console) {
             var proCxt = _pri.getProjectContext();
 
             // check
-            if (!_pri.check()) {
-                return;
-            };
+            //if (!_pri.check()) {
+            //    return;
+            //};
 
             // pub resource
             var res = require('./resource.js');

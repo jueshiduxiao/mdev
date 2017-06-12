@@ -89,7 +89,7 @@ module.exports = (function (fs, path, console, seajsBuilder) {
 
         _pub['run'] = function () {
             // jslint
-            //_pri.jslint();
+            _pri.jslint();
 
             return true;
         };

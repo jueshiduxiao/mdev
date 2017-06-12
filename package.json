@@ -11,6 +11,7 @@
     "clean-css": "2.0.0",
     "optimist": "0.2.5",
     "nodejs-server": "0.0.5",
+    "jslint": "0.1.2",
     "nodejs-tools": "0.0.3"
   },
   "devDependencies": {},
