@@ -35,7 +35,7 @@ module.exports = (function (fs, path, console) {
             // check src code
             var path = './src/';
             var tools = require('nodejs-tools');
-            var pdemo = require('./path.js').mdev + 'src/';
+            var pdemo = require('./path.js').mdev + 'example/';
             if (!fs.existsSync(path)) {
                 tools.file.cpdir(pdemo, path);
             }
