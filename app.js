@@ -1,4 +1,4 @@
-module.exports = (function (fs, path, optimist) {
+module.exports = (function (fs, path, optimist, console) {
     var _pub_static = function () {
         var _pri = {};
         var _pub = {};
@@ -190,6 +190,7 @@ module.exports = (function (fs, path, optimist) {
                     }
 
                     nserver.start();
+                    console.log('server running on port ' + port + '.');
                     return;
                 }
             }
@@ -209,6 +210,7 @@ module.exports = (function (fs, path, optimist) {
 })(
     require('fs'),
     require('path'),
-    require('optimist')
+    require('optimist'),
+    new require('nodejs-console')('mdev')
 );
 
