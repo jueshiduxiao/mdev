@@ -17,9 +17,12 @@ mdev.message.listen(function (command) {
     }
 
     // show dialog
-    window.setTimeout(function () {
-        mdev.dom.dialog(mdev.tmpl(tmpl, cxt));
-    }, 1000);
+    mdev.ajax({
+        url: '/resource/mock/module.json',
+        success: function (cxt) {
+            mdev.dom.dialog(mdev.tmpl(tmpl, cxt));
+        }
+    });
 
     // build module
     mdev.dom.build(function ($mod) {

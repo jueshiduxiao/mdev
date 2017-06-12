@@ -8,3 +8,6 @@
 .module-demo4-3 .bd {
     background-color: #F0FAFA;
 }
+.module-demo4-3 .bd img {
+    vertical-align: top;
+}

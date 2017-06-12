@@ -9,3 +9,6 @@
 .module-demo4-2 .bd {
     background-color: #F0FAFA;
 }
+.module-demo4-2 .bd img {
+    vertical-align: top;
+}

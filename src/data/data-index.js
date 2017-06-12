@@ -8,9 +8,8 @@
  */
 
 var tmpl = require('./tmpl-index');
-var api = require('./api-config');
 mdev.ajax({
-    url: api.get('page/index'),
+    url: '/resource/mock/index.json',
     success: function (cxt) {
         var html = mdev.tmpl(tmpl, cxt);
         mdev.dom.prepend(html);
