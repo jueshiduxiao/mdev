@@ -1,6 +1,6 @@
 {
   "name": "mdev",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "mdev is a compiler for module development.",
   "main": "./app.js",
   "dependencies": {

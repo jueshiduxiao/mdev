@@ -1,4 +1,4 @@
-module.exports = (function (fs, path, optimist, console) {
+module.exports = (function (fs, path, optimist, nconsole) {
     var _pub_static = function () {
         var _pri = {};
         var _pub = {};
@@ -190,7 +190,7 @@ module.exports = (function (fs, path, optimist, console) {
                     }
 
                     nserver.start();
-                    console.log('server running on port ' + port + '.');
+                    nconsole.log('server running on port ' + port + '.');
                     return;
                 }
             }
