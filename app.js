@@ -116,7 +116,7 @@ module.exports = (function (fs, path, optimist, console) {
                 '',
                 '  Version: ' + p.version,
                 '',
-                '    By lx 2013-2015.',
+                '    By lx 2013-2017.',
                 '    The more commands see \'mdev --help\'.'
             ];
 
