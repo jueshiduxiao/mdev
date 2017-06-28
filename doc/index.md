@@ -10,14 +10,14 @@
 src为源代码目录，通过执行mdev build生成build输出目录。
 ```
 src
-|-- conf
-|-- layout
-|-- module
-|-- page
-|-- ...
+  |-- conf     //配置
+  |-- layout   //布局
+  |-- module   //模块
+  |-- page     //页面
+  |-- ...
 build
-|-- page
-|-- resource
+  |-- page
+  |-- resource
 ```
 
 ### 构建页面
@@ -28,4 +28,4 @@ build
 * [基础篇](./interactive.md)
 * [进阶篇](./interactive-advanced.md)
 
-### 配置
+### 配置文件
